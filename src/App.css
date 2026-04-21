@@ -3,49 +3,69 @@
   text-rendering: optimizeLegibility;
 }
 
+
+
 *, *::after, *::before{
-  padding : 0;
-  margin : 0;
-  box-sizing : border-box;
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
 }
 
 html{
-  scroll-behavior : smooth;
+  scroll-behavior:smooth;
 }
 
 body{
-  min-height : 100vh;
-  line-height : 1.5;
-  -webkit-font-smoothing: antialiased;
+  min-height:100vh;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  background : #CBD5E1;
 }
 
 img, picture, video, canvas, svg{
-  display: block;
-  max-width: 100%;
+  display:block;
+  max-width:none; /* important so image keeps full width */
 }
 
 button, input, textarea, select{
-  font : inherit
+  font:inherit;
 }
 
 a{
-  text-decoration : none;
-  color :  inherit;
+  text-decoration:none;
+  color:inherit;
 }
 
-                                                                      /*Elements modifications*/
 
+/* Background layer */
 
 #z0{
-  position : fixed;
-  z-index : 0;
-  background : red;
-  min-height : 100vh;
-  min-width : 100vw;
+  display : none;
+  position:fixed;
+  inset:0;
+  z-index:0;
+  background:white;
+  overflow:hidden;
+  justify-content : center;
+  align-items : center;
 }
 
 #z1{
-  position : relative;
-  z-index : 1;
-  min-height : 100vh;
+  position:relative;
+  z-index:1;
+  min-height:100vh;
 }
+
+
+
+
+.loopTrack {
+  position: absolute;
+  display: flex;
+  width: max-content;
+  height: 80%;
+  animation : slideLoop 12s linear infinite;
+}
+
+
+
