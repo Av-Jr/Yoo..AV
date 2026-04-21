@@ -7,10 +7,14 @@ import Footer from "./FooterS/Footer.jsx"
 const App = () => {
   return(
       <div id="mainConApp">
-          <Hero></Hero>
-          <Project></Project>
-          <About></About>
-          <Footer></Footer>
+          <div id="z0">
+          </div>
+          <div id="z1">
+              <Hero></Hero>
+              <Project></Project>
+              <About></About>
+              <Footer></Footer>
+          </div>
       </div>
   )
 }

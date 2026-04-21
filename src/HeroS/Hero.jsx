@@ -2,7 +2,8 @@ import "./Hero.css"
 
 const Hero = () =>{
     return(
-        <div id = "HeroCon">Hero Section</div>
+        <div id = "HeroCon">Hero Section
+        </div>
     )
 }
 
