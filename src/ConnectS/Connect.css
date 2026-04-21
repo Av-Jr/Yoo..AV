@@ -1,6 +1,84 @@
 #ConnectCon{
-    width : 100%;
-    min-height : 100vh;
-    background : orange;
-    position : relative;
+    width:100%;
+    min-height:100vh;
+    padding:120px 80px;
+    background:#f4f7fb;
+    font-family:"DM Sans", sans-serif;
+}
+
+/* container */
+
+.connectInner{
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+}
+
+/* title */
+
+.connectTitle{
+    font-size:3rem;
+    color:#274161;
+    margin-bottom:10px;
+}
+
+/* intro */
+
+.connectIntro{
+    color:#445566;
+    margin-bottom:60px;
+}
+
+/* contact cards */
+
+.contactGrid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:50px;
+}
+
+.contactCard{
+    text-decoration:none;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.08);
+    transition:0.25s ease;
+}
+
+.contactCard h3{
+    color:#274161;
+    margin-bottom:8px;
+}
+
+.contactCard p{
+    color:#5a6b7c;
+    font-size:0.9rem;
+}
+
+.contactCard:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 35px rgba(0,0,0,0.15);
+}
+
+/* resume */
+
+.resumeSection{
+    margin-top:20px;
+}
+
+.resumeBtn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#274161;
+    color:white;
+    border-radius:10px;
+    text-decoration:none;
+    transition:0.25s ease;
+}
+
+.resumeBtn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }

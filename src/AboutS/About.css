@@ -1,6 +1,61 @@
 #AboutCon{
-    width : 100%;
-    min-height : 100vh;
-    background : purple;
-    position : relative;
+    width:100%;
+    min-height:100vh;
+    padding:120px 80px;
+    background:#f4f7fb;
+    font-family:"DM Sans", sans-serif;
+}
+
+.aboutInner{
+    max-width:1100px;
+    margin:auto;
+}
+
+.aboutTitle{
+    font-size:3rem;
+    color:#274161;
+    margin-bottom:40px;
+}
+
+/* text */
+
+.aboutText{
+    max-width:750px;
+    line-height:1.7;
+    font-size:1rem;
+    color:#445566;
+}
+
+.aboutText p{
+    margin-bottom:20px;
+}
+
+/* skills */
+
+.skillsSection{
+    margin-top:60px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.skillGroup h4{
+    color:#274161;
+    margin-bottom:10px;
+}
+
+/* badges */
+
+.skillList{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.skillBadge{
+    background:#e6edf5;
+    color:#274161;
+    padding:6px 12px;
+    border-radius:6px;
+    font-size:0.85rem;
 }
